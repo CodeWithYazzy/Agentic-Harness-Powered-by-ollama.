@@ -1,0 +1,17 @@
+{
+  "name": "ollama-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local-first AI coding assistant (Ollama local + cloud) — desktop-quality web app",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npm --prefix backend run dev & npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "node backend/server.js",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "test:backend": "npm --prefix backend run test:all",
+    "typecheck": "npm --prefix frontend run typecheck"
+  }
+}

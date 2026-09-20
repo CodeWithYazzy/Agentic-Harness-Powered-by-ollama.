@@ -1,0 +1,20 @@
+{
+  "name": "ollama-desktop-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test tests/unit/*.test.js",
+    "test:loop": "node --test tests/provider/agent-loop.test.js",
+    "test:mcp": "node --test tests/integration/mcp.test.js",
+    "test:integration": "node --test tests/integration/*.test.js",
+    "test:all": "node --test tests/unit/*.test.js tests/integration/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
